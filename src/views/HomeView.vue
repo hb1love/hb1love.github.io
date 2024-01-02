@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <router-link to="/wedding">웨딩</router-link>
   </main>
 </template>
