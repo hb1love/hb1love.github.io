@@ -61,7 +61,7 @@ const props = defineProps<{
   }
 
   .item-details.wide {
-    max-width: 1400px;
+    max-width: 1000px;
   }
 }
 </style>

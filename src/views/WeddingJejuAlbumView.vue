@@ -38,14 +38,21 @@ import j_34 from '@/assets/images/j/j_34.jpg';
 import j_35 from '@/assets/images/j/j_35.jpg';
 import j_36 from '@/assets/images/j/j_36.jpg';
 import j_37 from '@/assets/images/j/j_37.jpg';
+import j_38 from '@/assets/images/j/j_38.jpg';
 </script>
 
 <template>
   <main>
     <Card :wide="true" :filled="true">
       <Album>
+        <img :src="j_35" fetchpriority="high"/>
+        <masonry-wall :items="[j_37, j_23]" :min-columns="2" :max-columns="4" :gap="8">
+          <template #default="{ item }">
+            <img :src="item" loading="lazy"/>
+          </template>
+        </masonry-wall>
         <img :src="j_24" fetchpriority="high"/>
-        <masonry-wall :items="[j_23, j_37, j_35, j_30, j_33, j_34]" :min-columns="2" :max-columns="4" :gap="8">
+        <masonry-wall :items="[j_30, j_38, j_34, j_33]" :min-columns="2" :max-columns="4" :gap="8">
           <template #default="{ item }">
             <img :src="item" loading="lazy"/>
           </template>
